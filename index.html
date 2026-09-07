@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Up Your Day ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            Glow<span>Up</span> ✨
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mood">Mood</a></li>
+            <li><a href="#habits">Habits</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <button id="themeBtn">🌙</button>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <div class="badge">
+                ✨ Your daily self-care space
+            </div>
+
+            <h1>
+                Glow Up<br>
+                <span>Your Day!</span>
+            </h1>
+
+            <p id="greeting">
+                Good day! Let's make today amazing.
+            </p>
+
+            <a href="#mood" class="btn">
+                Start Your Day ✨
+            </a>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="emoji">🌷</div>
+
+            <h2>You Got This!</h2>
+
+            <p>
+                Take small steps, enjoy the process,
+                and don't forget to be kind to yourself.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOOD -->
+    <section id="mood">
+
+        <div class="title">
+
+            <h2>🌈 How's Your Mood?</h2>
+
+            <p>
+                Choose the emoji that matches your mood today.
+            </p>
+
+        </div>
+
+
+        <div class="mood-container">
+
+            <div class="moods">
+
+                <button class="mood" data-mood="Happy">😆</button>
+
+                <button class="mood" data-mood="Good">😊</button>
+
+                <button class="mood" data-mood="Chill">😌</button>
+
+                <button class="mood" data-mood="Tired">😴</button>
+
+                <button class="mood" data-mood="Sad">😔</button>
+
+                <button class="mood" data-mood="Excited">🤩</button>
+
+            </div>
+
+            <p id="moodResult">
+                Pilih mood kamu untuk hari ini 💗
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABITS -->
+    <section id="habits">
+
+        <div class="title">
+
+            <h2>🌱 Daily Glow Up</h2>
+
+            <p>
+                Complete your small goals today!
+            </p>
+
+        </div>
+
+
+        <div class="habit-container">
+
+            <div class="habit-card">
+
+                <div class="habit">
+                    <label>💧 Minum air yang cukup</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="habit">
+                    <label>📚 Belajar minimal 30 menit</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="habit">
+                    <label>📱 Kurangi screen time</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="habit">
+                    <label>🧘 Luangkan waktu untuk istirahat</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="habit">
+                    <label>💕 Lakukan sesuatu yang membuatmu senang</label>
+                    <input type="checkbox">
+                </div>
+
+
+                <div class="progress-box">
+
+                    <div class="progress-text">
+                        <span>Daily Progress</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            id="progressBar">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+    <section>
+
+        <div class="title">
+            <h2>💌 Daily Reminder</h2>
+        </div>
+
+
+        <div class="quote">
+
+            <p id="quoteText">
+                "You don't have to be perfect.
+                Just keep going."
+            </p>
+
+            <button
+                class="btn"
+                onclick="newQuote()">
+
+                Give Me Another ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JOURNAL -->
+    <section id="journal">
+
+        <div class="title">
+
+            <h2>📖 My Little Journal</h2>
+
+            <p>
+                Write anything you're thinking about today.
+            </p>
+
+        </div>
+
+
+        <div class="journal">
+
+            <textarea
+                id="journalText"
+                placeholder="Dear diary... today I feel...">
+            </textarea>
+
+
+            <div class="save-area">
+
+                <span id="saveMessage"></span>
+
+                <button
+                    class="btn"
+                    onclick="saveJournal()">
+
+                    Save Journal 💾
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="title">
+
+            <h2>🌷 About Glow Up Your Day</h2>
+
+        </div>
+
+
+        <div class="about">
+
+            <p>
+                Glow Up Your Day adalah website sederhana
+                yang dibuat untuk membantu Gen Z menjalani
+                hari dengan lebih positif dan teratur.
+                Di dalamnya terdapat mood checker,
+                daily habits, positive reminders, dan
+                digital journal.
+            </p>
+
+            <br>
+
+            <p>
+                Website ini dibuat menggunakan HTML,
+                CSS, dan JavaScript.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Created by: Indah Sri Utami</strong><br>
+                XI PPLG 1
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Made with <span>♥</span> for Gen Z ✨
+        </p>
+
+        <p>
+            © 2026 Glow Up Your Day
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
